@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Street Fighter</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="select-arena">
+            <h1 class="select-title">Select Arena</h1>
+            <button class="arena" loc="dojo_arena_photos/beach.jpg">beach</button>
+            <button class="arena" loc="dojo_arena_photos/earth.jpg">planet</button>
+            <button class="arena" loc="dojo_arena_photos/dojo.jpg">dojo</button>
+            <button class="arena" loc="dojo_arena_photos/forest.jpg">forest</button>
+            <button class="arena" loc="dojo_arena_photos/matrix.jpg">matrix</button>
+            <button class="arena" loc="dojo_arena_photos/snow.jpg">snow</button>
+        </div>
+        <div class="select-players">
+            <h1 class="select-title">Select Players</h1>
+            <select name="player1" id="player1">
+                <option value="dojo_arena_photos/mikey.png">Mikey</option>
+                <option value="dojo_arena_photos/raphael.png">Raphael</option>
+                <option value="dojo_arena_photos/donny.png">Donny</option>
+                <option value="dojo_arena_photos/leo.png">Leo</option>
+            </select>
+            <select name="player2" id="player2">
+                <option value="dojo_arena_photos/mikey.png">Mikey</option>
+                <option value="dojo_arena_photos/raphael.png">Raphael</option>
+                <option value="dojo_arena_photos/donny.png">Donny</option>
+                <option value="dojo_arena_photos/leo.png">Leo</option>
+            </select>
+            <button class="ready">Fight!!!</button>
+        </div>
+        <div class="player1">
+        </div>
+        <div class="player2">
+        </div>
+    </div>
+    <audio loop>
+            <source src="playerselect.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+    </audio>
+    <script src="index.js"></script>
+</body>
+</html>
